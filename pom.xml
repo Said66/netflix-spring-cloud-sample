@@ -20,8 +20,9 @@
 	</developers>
 	<modules>
 		<module>netflix-config-server</module>
-		<module>netflix-eureka</module>
+		<module>netflix-eureka-server</module>
 		<module>netflix-microservice-one</module>
+		<module>netflix-zuul-server</module>
 	</modules>
 	<scm>
 		<connection></connection>

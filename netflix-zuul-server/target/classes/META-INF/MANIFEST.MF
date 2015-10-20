@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: com.sample.netflix-zuul-server
+Buildnumber: 
+Implementation-Version: 
+Built-By: crequena
+Implementation-Vendor-Id: com.sample
+Specification-Title: netflix-zuul-server
+X-Git-Commits-Count: 
+X-Git-Branch: 
+Start-Class: com.sample.ZuulMainApp
+X-Git-Tag: 
+Build-Jdk: 1.8.0_60
+Created-By: Maven Integration for Eclipse
+Specification-Version: 0.0.1-SNAPSHOT
+

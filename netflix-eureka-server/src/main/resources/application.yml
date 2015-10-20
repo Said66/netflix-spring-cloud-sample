@@ -1,8 +1,11 @@
+info:
+  name: Eureka Service
+  description: Eureka Server
+  version: 
+
 server:
   port: 8761
-spring:
-  application:
-      name: eureka
+  
 eureka:
   instance:
     hostname: localhost

@@ -1,0 +1,15 @@
+info:
+  name: Eureka Service
+  description: Eureka Server
+  version: 
+
+server:
+  port: 8761
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
