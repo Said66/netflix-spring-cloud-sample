@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: com.sample.eureka.netflix-eureka
+Buildnumber: 
+Implementation-Version: 
+Built-By: crequena
+Implementation-Vendor-Id: com.sample.eureka
+Specification-Title: netflix-eureka
+X-Git-Commits-Count: 
+X-Git-Branch: 
+Start-Class: com.sample.EurekaMainApp
+X-Git-Tag: 
+Build-Jdk: 1.8.0_60
+Created-By: Maven Integration for Eclipse
+Specification-Version: 0.0.1-SNAPSHOT
+
