@@ -6,16 +6,27 @@
 		<artifactId>sample-spring-cloud-netflix</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.sample.eureka</groupId>
-	<artifactId>netflix-eureka</artifactId>
-	<!-- <version>0.0.1-SNAPSHOT</version> -->
+	<groupId>com.sample.configserver</groupId>
+	<artifactId>netflix-config-server</artifactId>
 	<properties>
-		<start-class>com.sample.EurekaMainApp</start-class>
+		<start-class>com.sample.configserver.ConfigServerMainApp</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

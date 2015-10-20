@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configserver
+  config:
+    name: configserver
+  cloud:
+    config:
+      enabled: true
+encrypt:
+   key: foobar
