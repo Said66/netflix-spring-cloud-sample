@@ -9,7 +9,7 @@
 	<artifactId>netflix-zuul-server</artifactId>
 	<!-- <version>0.0.1-SNAPSHOT</version> -->
 	<properties>
-		<start-class>com.sample.ZuulMainApp</start-class>
+		<start-class>com.sample.ZuulApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>

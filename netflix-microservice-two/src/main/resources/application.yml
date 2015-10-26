@@ -1,8 +1,0 @@
-info:
-  name: Microservice-TWO
-  description: Microservice-TWO
-  version: 1.0.0
-
-server:
-  port: 9001
-  

@@ -10,7 +10,7 @@
 	<artifactId>netflix-microservice-two</artifactId>
 	<!-- <version>0.0.1-SNAPSHOT</version> -->
 	<properties>
-		<start-class>com.sample.MicroServiceTwoMainApp</start-class>
+		<start-class>com.sample.MicroServiceTwoApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>

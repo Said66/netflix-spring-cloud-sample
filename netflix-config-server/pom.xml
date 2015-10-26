@@ -9,7 +9,7 @@
 	<groupId>com.sample.configserver</groupId>
 	<artifactId>netflix-config-server</artifactId>
 	<properties>
-		<start-class>com.sample.configserver.ConfigServerMainApp</start-class>
+		<start-class>com.sample.configserver.ConfigServerApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
