@@ -23,8 +23,9 @@
 		<module>netflix-eureka-server</module>
 		<module>netflix-microservice-one</module>
 		<module>netflix-microservice-two</module>
+		<module>netflix-microservice-client</module>
 		<module>netflix-zuul-server</module>
-		<module>netflix-client</module>
+		<module>hystrix-dashboard</module>
 	</modules>
 	<scm>
 		<connection></connection>
@@ -180,7 +181,16 @@
 				<artifactId>spring-cloud-starter-hystrix</artifactId>
 				<version>${spring-cloud.version}</version>
 			</dependency>
-			
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-netflix-turbine</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
 			<!-- Testing -->
 			<dependency>
 				<groupId>org.jmockit</groupId>

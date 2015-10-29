@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableFeignClients
-public class ClientApplication {
+public class MicroServiceClientApplication {
 	 public static void main( String[] args )
 	    {
-	    	SpringApplication.run(ClientApplication.class, args);
+	    	SpringApplication.run(MicroServiceClientApplication.class, args);
 	    }
 }

@@ -1,8 +1,14 @@
 info:
   name: configserver
   description: configserver
-  version: 
-  
+  version: 0.0.1
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
 server:
   port: 8888
   
