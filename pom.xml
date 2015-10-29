@@ -24,7 +24,7 @@
 		<module>netflix-microservice-one</module>
 		<module>netflix-microservice-two</module>
 		<module>netflix-zuul-server</module>
-		<module>netflix-feign-client</module>
+		<module>netflix-client</module>
 	</modules>
 	<scm>
 		<connection></connection>
