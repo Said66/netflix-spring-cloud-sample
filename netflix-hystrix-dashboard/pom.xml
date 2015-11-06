@@ -6,7 +6,7 @@
 		<artifactId>sample-spring-cloud-netflix</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>hystrix-dashboard</artifactId>
+	<artifactId>netflix-hystrix-dashboard</artifactId>
 	<properties>
 		<start-class>com.sample.ClientApplication</start-class>
 	</properties>

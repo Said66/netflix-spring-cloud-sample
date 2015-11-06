@@ -25,7 +25,7 @@
 		<module>netflix-microservice-two</module>
 		<module>netflix-microservice-client</module>
 		<module>netflix-zuul-server</module>
-		<module>hystrix-dashboard</module>
+		<module>netflix-hystrix-dashboard</module>
 	</modules>
 	<scm>
 		<connection></connection>
