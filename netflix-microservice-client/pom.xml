@@ -27,6 +27,11 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.sample.dto</groupId>
+			<artifactId>netflix-dto</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
