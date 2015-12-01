@@ -1,0 +1,28 @@
+info:
+  name: Microservice-Client
+  description: Microservice-Client
+  version: 1.0.0
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    enabled: true
+    sensitive: false
+server:
+  port: 9100
+spring:
+  application:
+    name: hystrixdashboard
+  config:
+    name: hystrixdashboard
+#security:
+#  user:
+#    password: password
+security:
+  ignored: true
+turbine:
+  aggregator:
+    clusterConfig: MICROSERVICESCLIENT
+  appConfig: microservice_client

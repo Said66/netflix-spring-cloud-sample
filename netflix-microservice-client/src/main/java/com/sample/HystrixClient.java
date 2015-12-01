@@ -4,31 +4,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.sample.dto.SampleDTO;
 
 @Component
 public class HystrixClient {
-	
+
 	@Autowired
 	private IMicroServiceOneClient microServiceOneClient;
-	
+
 	@Autowired
 	private IMicroServiceTwoClient microServiceTwoClient;
 
 	@HystrixCommand(fallbackMethod = "retrieveFallbackMicroServiceOne")
-	public String homeMicroServiceOne() {
+	public SampleDTO homeMicroServiceOne() {
 		return microServiceOneClient.homeMicroServiceOne();
 	}
 
+	public SampleDTO retrieveFallbackMicroServiceOne() {
+		SampleDTO sampleDTO = new SampleDTO();
+		sampleDTO.setHost("MicroService-ONE is DOWN");
+		return sampleDTO;
+	}
+
 	@HystrixCommand(fallbackMethod = "retrieveFallbackMicroServiceTwo")
-	public String homeMicroServiceTwo() {
+	public SampleDTO homeMicroServiceTwo() {
 		return microServiceTwoClient.homeMicroServiceTwo();
 	}
 
-	public String retrieveFallbackMicroServiceOne() {
-		return "MicroService-ONE is DOWN";
-	}
-
-	public String retrieveFallbackMicroServiceTwo() {
-		return "MicroService-TWO is DOWN";
+	public SampleDTO retrieveFallbackMicroServiceTwo() {
+		SampleDTO sampleDTO = new SampleDTO();
+		sampleDTO.setHost("MicroService-TWO is DOWN");
+		return sampleDTO;
 	}
 }
