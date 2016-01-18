@@ -1,7 +1,7 @@
 info:
-  name: zuul_server
+  name: zuul-server
   description: Zuul Server
-  version: 0.0.1
+  version: 1.0.0
 endpoints:
   restart:
     enabled: true
@@ -10,14 +10,14 @@ endpoints:
   health:
     enabled: true
     sensitive: false
-zuul:
-  routes:
-    microservice_one:  /microserviceone/**
-    microservice_two:  /microservicetwo/**
-
 server:
   port: 8080
-logging:
-  level:
-    ROOT: INFO
-    org.springframework.web: DEBUG
+zuul:
+  routes:
+    microservice-one:  
+      path: /microserviceone/**
+      serviceId: microservice-one
+    microservice-two:  
+      path: /microservicetwo/**
+      serviceId: microservice-two
+

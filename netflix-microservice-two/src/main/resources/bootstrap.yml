@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice_two
+    name: microservice-two
   cloud:
     config:
      enabled: true

@@ -25,4 +25,4 @@ security:
 turbine:
   aggregator:
     clusterConfig: MICROSERVICESCLIENT
-  appConfig: microservice_client
+  appConfig: microservice-zuul-client

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sample.dto.SampleDTO;
 
-@FeignClient("zuulserver")
+@FeignClient("zuul-server")
 public interface IMicroServiceTwoClient {
 
 	 @RequestMapping(method = RequestMethod.GET, value = "/microservicetwo")
