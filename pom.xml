@@ -23,7 +23,7 @@
 		<module>netflix-eureka-server</module>
 		<module>netflix-microservice-one</module>
 		<module>netflix-microservice-two</module>
-		<module>netflix-microservice-client</module>
+		<module>netflix-microservice-zuul-client</module>
 		<module>netflix-zuul-server</module>
 		<module>netflix-hystrix-dashboard</module>
 		<module>netflix-dto</module>

@@ -6,7 +6,7 @@
 		<artifactId>sample-spring-cloud-netflix</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>netflix-microservice-client</artifactId>
+	<artifactId>netflix-microservice-zuul-client</artifactId>
 	<properties>
 		<start-class>com.sample.MicroServiceClientApplication</start-class>
 	</properties>
