@@ -3,8 +3,7 @@ info:
   description: Microservice-Client
   version: 1.0.0
 endpoints:
-  restart:
-    enabled: true
+  enabled: true      
   shutdown:
     enabled: true
   health:
