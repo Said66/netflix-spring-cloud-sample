@@ -34,8 +34,8 @@ public class ClientController {
 		log.debug(sampleDTO2.toString());
 
 		StringBuffer stringBuffer = new StringBuffer();
-		stringBuffer.append("RESTTEMPLATECLIENTEXAMPLE  - ").append(sampleDTO1.toString()).append("<br>");
-		stringBuffer.append("RESTTEMPLATECLIENTEXAMPLE - ").append(sampleDTO2.toString()).append("<br>");
+		stringBuffer.append("RESTTEMPLATE-CLIENT-EXAMPLE  - ").append(sampleDTO1.toString()).append("<br>");
+		stringBuffer.append("RESTTEMPLATE-CLIENT-EXAMPLE - ").append(sampleDTO2.toString()).append("<br>");
 		stringBuffer.append("=============================").append("<br>");
 		
 		
@@ -43,8 +43,8 @@ public class ClientController {
 		log.debug(sampleDTO1.toString());
 		sampleDTO2 = feignClientExample.homeMicroServiceTwo();
 		log.debug(sampleDTO2.toString());
-		stringBuffer.append("FEIGNCLIENTEXAMPLE  - ").append(sampleDTO1.toString()).append("<br>");
-		stringBuffer.append("FEIGNCLIENTEXAMPLE - ").append(sampleDTO2.toString()).append("<br>");
+		stringBuffer.append("FEIGN-CLIENT-EXAMPLE  - ").append(sampleDTO1.toString()).append("<br>");
+		stringBuffer.append("FEIGN-CLIENT-EXAMPLE - ").append(sampleDTO2.toString()).append("<br>");
 		stringBuffer.append("=============================").append("<br>");
 		
 		discoveryClientExample.homeMicroServiceOne();
