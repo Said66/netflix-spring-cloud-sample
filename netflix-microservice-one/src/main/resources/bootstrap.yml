@@ -1,14 +1,13 @@
 spring:
-  application:
-    name: microservice-one
-  cloud:
-    config:
-     enabled: true
-     uri: http://localhost:8888
-     username: user
-     password: s3cr3t
-     failFast: true
-     
+ application:
+  name: microservice-one
+ cloud:
+  config:
+   enabled: true
+   uri: http://localhost:8888
+   username: user
+   password: s3cr3t
+   failFast: true  
 ---
 spring:
   profiles:

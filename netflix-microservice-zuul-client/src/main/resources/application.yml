@@ -1,0 +1,11 @@
+info:
+ name: Zuul Client
+ description: Zuul Client
+ version: 1.0.0
+---
+server:
+ port: 9003
+ 
+zuulserver:
+ ribbon:
+  listOfServers: localhost:8080

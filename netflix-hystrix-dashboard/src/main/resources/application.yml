@@ -1,24 +1,11 @@
 info:
-  name: Microservice-Client
-  description: Microservice-Client
-  version: 1.0.0
-endpoints:
-  enabled: true      
-  shutdown:
-    enabled: true
-  health:
-    enabled: true
-    sensitive: false
+ name: HYSTRIX-DASHBOARD
+ description: HYSTRIX-DASHBOARD
+ version: 1.0.0
+---
 server:
   port: 9100
-spring:
-  application:
-    name: hystrixdashboard
-  config:
-    name: hystrixdashboard
-#security:
-#  user:
-#    password: password
+
 security:
   ignored: true
 turbine:

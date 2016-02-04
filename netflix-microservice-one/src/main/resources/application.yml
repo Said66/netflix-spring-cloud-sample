@@ -1,0 +1,7 @@
+info:
+ name: Microservice-ONE
+ description: Microservice-ONE
+ version: 1.0.0
+---
+server:
+ port: 9001

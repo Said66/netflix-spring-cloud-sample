@@ -27,6 +27,7 @@
 		<module>netflix-zuul-server</module>
 		<module>netflix-hystrix-dashboard</module>
 		<module>netflix-dto</module>
+		<module>netflix-spring-cloud-ribbon-client</module>
 	</modules>
 	<scm>
 		<connection></connection>

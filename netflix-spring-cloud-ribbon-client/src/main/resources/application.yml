@@ -1,0 +1,11 @@
+info:
+ name: Ribbon Client
+ description: Ribbon Client
+ version: 1.0.0
+---
+server:
+ port: 9004
+
+ribbon:
+ eureka:
+  enabled: true

@@ -24,7 +24,7 @@ public class MicroServiceTwoController {
 	
 	@RequestMapping("/")
 	@ResponseBody
-	SampleDTO home() {
+	SampleDTO homeMicroServiceTwo() {
 		ServiceInstance localInstance = discoveryClient.getLocalServiceInstance();
 		SampleDTO sampleDTO = new SampleDTO();
 		sampleDTO.setHost(localInstance.getHost());

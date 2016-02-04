@@ -1,6 +1,6 @@
 spring:
  application:
-  name: microservice-zuul-client
+  name: microservice-ribbon-client
  cloud:
   config:
    enabled: true
