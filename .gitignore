@@ -82,4 +82,4 @@ build/
 .idea/mongoSettings.xml
 .idea_modules/
 atlassian-ide-plugin.xml
-
+*.springBeans
