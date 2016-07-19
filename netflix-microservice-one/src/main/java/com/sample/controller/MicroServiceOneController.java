@@ -1,5 +1,9 @@
 package com.sample.controller;
 
+import com.sample.dto.SampleDTO;
+import lombok.Data;
+import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -8,11 +12,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.sample.dto.SampleDTO;
-
-import lombok.extern.slf4j.Slf4j;
-
 @Slf4j
+@Data
 @Controller
 public class MicroServiceOneController {
 	
@@ -25,6 +26,8 @@ public class MicroServiceOneController {
 	@RequestMapping("/")
 	@ResponseBody
 	SampleDTO homeMicroServiceOne() {
+
+        log.debug("Executing homeMicroServiceOne");
 		ServiceInstance localInstance = discoveryClient.getLocalServiceInstance();
 		SampleDTO sampleDTO = new SampleDTO();
 		sampleDTO.setHost(localInstance.getHost());

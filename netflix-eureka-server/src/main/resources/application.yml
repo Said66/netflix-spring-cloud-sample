@@ -2,18 +2,9 @@ info:
   name: Eureka Server
   description: Eureka Server
   version: 1.0.0
----
-endpoints:
- restart:
-  enabled: true
- shutdown:
-  enabled: true
- health:
-  enabled: true
-  sensitive: false
 server:
  port: 8761
- 
+---
 eureka:
  dashboard:
   enabled: true
@@ -26,6 +17,3 @@ eureka:
   fetchRegistry: false
   serviceUrl:
    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
- server:
-  waitTimeInMsWhenSyncEmpty: 0
-  renewalPercentThreshold: 0.49
